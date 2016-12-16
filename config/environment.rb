@@ -12,4 +12,4 @@ ActionMailer::Base.smtp_settings = {
     :domain         => 'jkulovitz.herokuapp.com',
     :authentication =>:plain,
 }
-ActionMailer::Base.delivery_methid = :smtp
+ActionMailer::Base.delivery_method = :smtp
