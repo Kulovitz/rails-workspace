@@ -55,6 +55,10 @@ background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, F
     background-color: #89253e;
   }
 }
+
+.alert-notice {
+  display: none;
+}
 // Home Page Styles
 .home-callout {
   color: white;
