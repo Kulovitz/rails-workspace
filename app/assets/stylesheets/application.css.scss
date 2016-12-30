@@ -20,19 +20,44 @@
 @import "font-awesome";
 
 // Typography Styles
-h1, h2, h3 {
+h1, h2, h3, h4, p {
   font-family: 'Open Sans', sans-serif;
 }
-// Background Gradient
-.navbar, .home-callout {
-  /* Gradient provided by @_ighosh at uiGradients.com */
-background: #3a6186; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+
+h1, h3 {
+  text-shadow: 5px 4px 3px rgba(0,0,0,0.3);
+  margin-left: 10%;
+}
+
+h1{
+  font-size:5em;
+  font-weight: bold;
+  
+}
+
+p {
+  color: #767676;
+}
+
+.testimonials-person{
+  color: black;
+}
+
+body{
+  background-color: #f5f5f5;
+}
+
+h4{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
 // Nav Styles
 .navbar {
   border: none;
+  margin-bottom: 0px;
+  background-color: #f5f5f5;
 }
 .navbar-brand{
   font-family: 'Open Sans', sans-serif;
@@ -40,19 +65,19 @@ background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, F
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: black;
   &:hover {
-    color: white;
-    opacity: 0.75;
+    color: #767676;
+    opacity: 0.90;
   }
 }
-.navbar-default .navbar-toggle .icon-bar{
-  background-color: white;
+.navbar-toggle{
+  border: 2px solid black;
 }
 .navbar-default .navbar-toggle{
-  border: 2px solid white;
+  border: 2px solid black;
   &:hover, &:focus {
-    background-color: #89253e;
+    background-color: #e5e5e5;
   }
 }
 
@@ -63,9 +88,63 @@ background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, F
 .home-callout {
   color: white;
   margin-top: -20px;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url("https://static.pexels.com/photos/7109/laptop-notebook-clean-hero.jpg");
+  background-position: 50% 50%;
 }
 .home-signup-links{
   margin-top: 30px;
+}
+
+.glyphicon{
+  font-size: 7em;
+  text-align: center;
+}
+
+ img{
+    display: block;
+    margin: auto;
+    height: 230px;
+    width: 230px;
+    padding-top: 25px;
+}
+.well{
+  background-color: #e5e5e5;
+}
+.division{
+  height:190px;
+}
+.middle-row{
+  margin:16px;
+  margin-top:-20px;
+}
+.social-media-divider{
+  border-color: #767676;
+}
+
+ul{
+  display: inline;
+  color: black;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  padding-top: 5px;
+}
+.social-media-bar{
+  text-align: center;
+  display: inline;
+}
+
+.social-media{
+  display: inline;
+  padding: 5px;
+}
+.social-icon{
+  color: #767676;
+}
+.copyright{
+  text-align: left;
+  display: inline;
+  color: #767676;
 }

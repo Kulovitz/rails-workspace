@@ -1,22 +1,89 @@
-<div class="home-callout text-center container-fluid">
+<div class="home-callout text-left container-fluid">
     <h1>Welcome to DevMatch</h1>
     <h3>A membership site where entrepreneurs can meet developers</h3>
 </div>
+
+<br>
+
+<div class= "container extra-information">
+    <div class="row middle-row">
+        <div class="col-md-4">
+            <div class="container-fluid info-panel">
+               <img src="https://assets-cdn.github.com/images/modules/site/home-ill-work.png?sn" alt="portrait" align="middle">
+               <br>
+               <h4 align="center">Connect with the <br>professionals in your area!</h4>
+               <p align="center">DevMatch helps you connect to the people you need to jumpstart your business' online presence. All developers are verified by our team.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+           <div class="container-fluid info-panel">
+               <img src="https://assets-cdn.github.com/images/modules/site/home-ill-build.png?sn" alt="portrait" align="middle">
+               <br>
+               <h4 align="center">Discuss your business' needs with<br>developers that know your customers!</h4>
+               <p align="center">DevMatch helps you connect to the people you need to jumpstart your business' online presence. All developers are verified by our team.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="container-fluid info-panel">
+               <img src="https://assets-cdn.github.com/images/modules/site/home-ill-projects.png?sn" alt="portrait" align="middle">
+               <br>
+               <h4 align="center">Learn to program yourself!<br>DevMatch can match you with tutors!</h4>
+               <p align="center">DevMatch helps you connect to the people you need to jumpstart your business' online presence. All developers are verified by our team.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="container testimonials">
+    <h2 class="text-center">Our customer's satisfaction speaks for itself!</h2>
+    <div class="row">
+        <div class= "col-md-4">
+        
+        </div>
+        <div class= "col-md-4">
+        
+        </div>
+        <div class= "col-md-4">
+        
+        </div>
+    </div>
+</div>
+
+
 <div class="container home-signup-links">
     <div class="row">
         <div class="col-md-6">
-            <div class="well">
-            <h2 class="text-center">Basic Membership</h2>
-            <h4 class="text-center">Sign up for free to get basic access to the community!</h4>
-            <br>
-            <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+            <div class="well division">
+                <div class="container-fluid">
+                    <h2 class="text-center">Basic Membership</h2>
+                    <h4 class="text-center">Sign up for free to get instant access to the community. See what's out there!</h4>
+                </div>
+                <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
             </div>
         </div>
-    <div class="col-md-6">
-        <div class="well">
-            <h2 class="text-center">Pro Membership</h2>
-            <h4 class="text-center">Sign up for the pro account for 10$/month to get access to the community and contact information!</h4>
+        <div class="col-md-6">
+        <div class="well division">
+            <div class="container-fluid">
+                <h2 class="text-center">Pro Membership</h2>
+                <h4 class="text-center">Sign up for the pro account for 10$/month to get access to the community and contact information!</h4>
+            </div>
             <%= link_to "Sign Up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
         </div>
     </div>
 </div>
+
+
+<br>
+<hr class="social-media-divider">
+<ul>
+    <li class="copyright"><i class="fa fa-copyright"></i> 2016 DevMatch Inc.</li>
+    <li class="social-media-bar">
+        <ul>
+            <li class="social-media"><a href="http://facebook.com"> <i class="fa fa-facebook social-icon"></i></a></li>
+            <li class="social-media"><a href="twitter.com"> <i class="fa fa-twitter social-icon"></i></a></li>
+            <li class="social-media"><a href="googleplus.com"> <i class="fa fa-linkedin social-icon"></i></a></li>
+            <li class="social-media"></li></li><a href="linkedin.com"> <i class="fa fa-google-plus social-icon"></i></a></li>
+        </ul>
+    </li>
+</ul>

@@ -31,6 +31,10 @@ gem 'font-awesome-sass', '4.6.2'
 gem 'hirb', '0.7.3'
 # Use Devise for user authentication
 gem 'devise', '4.2.0'
+# use Stripe to process credit card payments
+gem "stripe", '1.48.0'
+# use Figaro for ENV variables
+gem 'figaro', '1.1.1'
 
 
 
