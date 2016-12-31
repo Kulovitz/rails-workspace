@@ -1,4 +1,4 @@
-class Plan <ActiveRecord::Base
+class Plan < ActiveRecord::Base
     has_many :users
     
 attr_accessor :stripe_card_token
